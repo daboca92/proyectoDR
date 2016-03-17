@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
-<div class="card">
-<img class="icon" src="../images/yeoman.png">
-<h2 class="title">Bootstrap</h2>
-<p class="developer">rodrigo</p>
-</div>
+
+
+<img class="icon" ng-src="{{ info.icon }}"> 
+<h2 class="title">{{ info.title }}</h2> 
+<p class="developer">{{ info.developer }}</p> 
+<p class="price">{{ info.price | currency }}</p>
+

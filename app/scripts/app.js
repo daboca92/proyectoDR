@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('proyectoDrApp', [
     'ngAnimate',
     'ngAria',
@@ -18,17 +18,18 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+  app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .when('/portfolio', {
         templateUrl: 'views/portfolio.html',
-        controller: 'PortfolioCtrl',
+        controller: 'PortfolioController',
         controllerAs: 'portfolio'
       })
       .when('/about', {

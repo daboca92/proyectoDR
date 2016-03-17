@@ -1,2 +1,6 @@
 <p>This is the about view.</p>
-<div ng-repeat=""></div>
+<div class="main" ng-controller="PortfolioController">
+<div class="card" ng-repeat="sample in apps">
+	<portfolio-info info="sample"></portfolio-info>
+</div>
+</div>
