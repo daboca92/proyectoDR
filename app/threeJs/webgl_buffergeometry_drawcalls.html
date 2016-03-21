@@ -98,7 +98,7 @@
 
 				var pMaterial = new THREE.PointsMaterial( {
 					color: 0x555555,
-					size: 5,
+					size: 2.5,
 					blending: THREE.AdditiveBlending,
 					transparent: false,
 					sizeAttenuation: false
@@ -275,9 +275,9 @@
 
 			function render() {
 
-				var time = Date.now() * 0.001;
+				// var time = Date.now() * 0.001;
 
-				group.rotation.y = time * 0.01;
+				// group.rotation.y = time * 0.01;
 				camera.position.x += ( -mouseX - camera.position.x ) * .01;
 				camera.position.y += (  mouseY - camera.position.y ) * .01;
 
